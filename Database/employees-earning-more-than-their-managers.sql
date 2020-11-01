@@ -1,0 +1,1 @@
+select a.Name as Employee from Employee a left join Employee b on a.ManagerId = b.Id and a.ManagerId is not NULL where a.Salary > b.Salary
